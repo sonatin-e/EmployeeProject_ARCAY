@@ -1,9 +1,21 @@
 package version3;
 
 public class Mydate {
-    int date;
-    int month;
-    int year;
+    private int date;
+    private int month;
+    private int year;
+
+    public Mydate() {
+        this.date = 0;
+        this.month = 0;
+        this.year = 0;
+    }
+
+    public Mydate(int date, int month, int year) {
+        this.date = date;
+        this.month = month;
+        this.year = year;
+    }
 
     public int getMonth() {
         return month;

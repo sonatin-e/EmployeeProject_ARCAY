@@ -1,9 +1,21 @@
 package version3;
 
 public class Name {
-String firstN;
-String MiddleN;
-String LastN;
+
+    private String firstN;
+    private String MiddleN;
+    private String LastN;
+
+    public Name(String firstN) {
+        this.firstN = firstN;
+    }
+
+    public Name(String firstN, String middleN, String lastN) {
+        this.firstN = firstN;
+        this.MiddleN = middleN;
+        this.LastN = lastN;
+    }
+
     public String getFirstN() {
         return firstN;
     }
