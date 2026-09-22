@@ -1,6 +1,8 @@
 package version3;
 
-public class Mydate {
+import java.util.Objects;
+
+public class Mydate implements Cloneable {
     private int date;
     private int month;
     private int year;

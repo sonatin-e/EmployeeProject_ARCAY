@@ -9,7 +9,7 @@ package version3;
  *
  * @author User
  */
-public class BasePlusCommissionEmployee {
+public class BasePlusCommissionEmployee  extends CommissionEmployee{
 
     private int empID;
     private String empName;
@@ -18,7 +18,7 @@ public class BasePlusCommissionEmployee {
     private Mydate empBirthDate;
     private Mydate empDateHired;
 
-    // Constructors
+
     public BasePlusCommissionEmployee() {
         this.empID = 0;
         this.empName = "N/A";
