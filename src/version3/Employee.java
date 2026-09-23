@@ -1,6 +1,6 @@
 package version3;
 
-public class Employee extends Mydate{
+public class Employee{
     int empID;
     Name empName;
     Mydate empBirthDate;
@@ -10,7 +10,7 @@ public class Employee extends Mydate{
 
     }
 
-    public Employee(int empID,Name name, Mydate empBirthDate, Mydate empDateHired) {
+    public Employee(int empID,Name empName, Mydate empBirthDate, Mydate empDateHired) {
         this.empID = empID;
         this.empName = empName;
         this.empBirthDate = empBirthDate;

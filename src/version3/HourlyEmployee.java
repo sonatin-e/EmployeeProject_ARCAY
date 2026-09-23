@@ -1,108 +1,36 @@
 package version3;
 
-public class HourlyEmployee {
+public class HourlyEmployee extends Employee{
 
-    private int empID;
-    private String empName;
+
     private float totalHoursWorked;
     private double ratePerHour;
-    private Mydate empBirthDate;
-    private Mydate empDateHired;
 
-    public HourlyEmployee() {
-        this.empID = 0;
-        this.empName = "N/A";
-        this.totalHoursWorked = 0.0f;
-        this.ratePerHour = 0.0;
-        this.empBirthDate = new Mydate();
-        this.empDateHired = new Mydate();
-    }
-
-    public HourlyEmployee(int empID, String empName) {
-        this.empID = empID;
-        this.empName = empName;
-        this.totalHoursWorked = 0.0f;
-        this.ratePerHour = 0.0;
-        this.empBirthDate = new Mydate();
-        this.empDateHired = new Mydate();
-    }
-
-    public HourlyEmployee(int empID, String empName, float totalHoursWorked, double ratePerHour) {
-        this.empID = empID;
-        this.empName = empName;
+    public HourlyEmployee(float totalHoursWorked, double ratePerHour) {
         this.totalHoursWorked = totalHoursWorked;
         this.ratePerHour = ratePerHour;
-        this.empBirthDate = new Mydate();
-        this.empDateHired = new Mydate();
     }
 
-    public HourlyEmployee(int empID, String empName, float totalHoursWorked, double ratePerHour, Mydate empDateHired, Mydate empBirthDate) {
-        this.empID = empID;
-        this.empName = empName;
+    public HourlyEmployee(int empID, Name empName, Mydate empBirthDate, Mydate empDateHired, float totalHoursWorked, double ratePerHour) {
+        super(empID, empName, empBirthDate, empDateHired);
         this.totalHoursWorked = totalHoursWorked;
         this.ratePerHour = ratePerHour;
-        this.empDateHired = empDateHired;
-        this.empBirthDate = empBirthDate;
-    }
-
-    public int getEmpID() {
-
-        return empID;
-    }
-
-    public void setEmpID(int empID) {
-
-        this.empID = empID;
-    }
-
-    public String getEmpName() {
-
-        return empName;
-    }
-
-    public void setEmpName(String empName) {
-
-        this.empName = empName;
-    }
-
-    public float getTotalHoursWorked() {
-
-        return totalHoursWorked;
-    }
-
-    public void setTotalHoursWorked(float totalHoursWorked) {
-
-        this.totalHoursWorked = totalHoursWorked;
     }
 
     public double getRatePerHour() {
-
         return ratePerHour;
     }
 
     public void setRatePerHour(double ratePerHour) {
-
         this.ratePerHour = ratePerHour;
     }
 
-    public Mydate getEmpBirthDate() {
-
-        return empBirthDate;
+    public float getTotalHoursWorked() {
+        return totalHoursWorked;
     }
 
-    public void setEmpBirthDate(Mydate empBirthDate) {
-
-        this.empBirthDate = empBirthDate;
-    }
-
-    public Mydate getEmpDateHired() {
-
-        return empDateHired;
-    }
-
-    public void setEmpDateHired(Mydate empDateHired) {
-
-        this.empDateHired = empDateHired;
+    public void setTotalHoursWorked(float totalHoursWorked) {
+        this.totalHoursWorked = totalHoursWorked;
     }
 
     public double computeSalary(Mydate today) {

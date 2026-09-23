@@ -11,61 +11,7 @@ package version3;
  */
 public class CommissionEmployee extends Employee{
 
-    private int empID;
-    private String empName;
     private double totalSale;
-    private Mydate empBirthDate;
-    private Mydate empDateHired;
-
-    // Constructors
-    public CommissionEmployee() {
-        this.empID = 0;
-        this.empName = "N/A";
-        this.totalSale = 0.0;
-        this.empBirthDate = null;
-        this.empDateHired = null;
-    }
-
-    public CommissionEmployee(int empID, String empName) {
-        this.empID = empID;
-        this.empName = empName;
-        this.totalSale = 0.0;
-        this.empBirthDate = null;
-        this.empDateHired = null;
-    }
-
-    public CommissionEmployee(int empID, String empName, double totalSale) {
-        this.empID = empID;
-        this.empName = empName;
-        this.totalSale = totalSale;
-        this.empBirthDate = null;
-        this.empDateHired = null;
-    }
-
-    public CommissionEmployee(int empID, String empName, double totalSale, Mydate empBirthDate, Mydate empDateHired) {
-        this.empID = empID;
-        this.empName = empName;
-        this.totalSale = totalSale;
-        this.empBirthDate = empBirthDate;
-        this.empDateHired = empDateHired;
-    }
-
-    // Getters and Setters
-    public int getEmpID() {
-        return empID;
-    }
-
-    public void setEmpID(int empID) {
-        this.empID = empID;
-    }
-
-    public String getEmpName() {
-        return empName;
-    }
-
-    public void setEmpName(String empName) {
-        this.empName = empName;
-    }
 
     public double getTotalSale() {
         return totalSale;
@@ -73,22 +19,6 @@ public class CommissionEmployee extends Employee{
 
     public void setTotalSale(double totalSale) {
         this.totalSale = totalSale;
-    }
-
-    public Mydate getEmpBirthDate() {
-        return empBirthDate;
-    }
-
-    public void setEmpBirthDate(Mydate empBirthDate) {
-        this.empBirthDate = empBirthDate;
-    }
-
-    public Mydate getEmpDateHired() {
-        return empDateHired;
-    }
-
-    public void setEmpDateHired(Mydate empDateHired) {
-        this.empDateHired = empDateHired;
     }
 
     // Core Behavioral Methods

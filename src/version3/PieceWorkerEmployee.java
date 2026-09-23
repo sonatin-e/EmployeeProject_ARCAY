@@ -9,49 +9,20 @@ package version3;
  *
  * @author User
  */
-public class PieceWorkerEmployee {
-    private int empID;
-    private String empName;
+public class PieceWorkerEmployee extends Employee{
+
     private int totalPiecesFinished;
     private double ratePerPiece;
-    private Mydate empBirthDate;
-    private Mydate empDateHired;
 
-    public PieceWorkerEmployee() {
-        this.empID = 0;
-        this.empName = "N/A";
-        this.ratePerPiece = 0.0;
-        this.totalPiecesFinished = 0;
-    }
-
-    public PieceWorkerEmployee(int empID, String empName) {
-        this.empID = empID;
-        this.empName = empName;
-        this.ratePerPiece = 0.0;
-        this.totalPiecesFinished = 0;
-    }
-
-    public PieceWorkerEmployee(int empID, String empName, int totalPiecesFinished, double ratePerPiece) {
-        this.empID = empID;
-        this.empName = empName;
+    public PieceWorkerEmployee(int totalPiecesFinished, double ratePerPiece) {
         this.totalPiecesFinished = totalPiecesFinished;
         this.ratePerPiece = ratePerPiece;
     }
 
-    public int getEmpID() {
-        return empID;
-    }
-
-    public void setEmpID(int empID) {
-        this.empID = empID;
-    }
-
-    public String getEmpName() {
-        return empName;
-    }
-
-    public void setEmpName(String empName) {
-        this.empName = empName;
+    public PieceWorkerEmployee(int empID, Name empName, Mydate empBirthDate, Mydate empDateHired, int totalPiecesFinished, double ratePerPiece) {
+        super(empID, empName, empBirthDate, empDateHired);
+        this.totalPiecesFinished = totalPiecesFinished;
+        this.ratePerPiece = ratePerPiece;
     }
 
     public int getTotalPiecesFinished() {
