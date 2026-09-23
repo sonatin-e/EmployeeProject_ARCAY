@@ -12,7 +12,7 @@ package version2;
 public class BasePlusCommissionEmployee {
 
     private int empID;
-    private String empName;
+    private Name empName;
     private double totalSale;
     private double baseSalary;
     private Mydate empBirthDate;
@@ -21,14 +21,14 @@ public class BasePlusCommissionEmployee {
     // Constructors
     public BasePlusCommissionEmployee() {
         this.empID = 0;
-        this.empName = "N/A";
+        this.empName = new Name();
         this.totalSale = 0.0;
         this.baseSalary = 0.0;
         this.empBirthDate = null;
         this.empDateHired = null;
     }
 
-    public BasePlusCommissionEmployee(int empID, String empName) {
+    public BasePlusCommissionEmployee(int empID, Name empName) {
         this.empID = empID;
         this.empName = empName;
         this.totalSale = 0.0;
@@ -37,7 +37,7 @@ public class BasePlusCommissionEmployee {
         this.empDateHired = null;
     }
 
-    public BasePlusCommissionEmployee(int empID, String empName, double totalSale, double baseSalary) {
+    public BasePlusCommissionEmployee(int empID, Name empName, double totalSale, double baseSalary) {
         this.empID = empID;
         this.empName = empName;
         this.totalSale = totalSale;
@@ -46,7 +46,7 @@ public class BasePlusCommissionEmployee {
         this.empDateHired = null;
     }
 
-    public BasePlusCommissionEmployee(int empID, String empName, double totalSale, double baseSalary, Mydate empBirthDate, Mydate empDateHired) {
+    public BasePlusCommissionEmployee(int empID, Name empName, double totalSale, double baseSalary, Mydate empBirthDate, Mydate empDateHired) {
         this.empID = empID;
         this.empName = empName;
         this.totalSale = totalSale;
@@ -64,11 +64,11 @@ public class BasePlusCommissionEmployee {
         this.empID = empID;
     }
 
-    public String getEmpName() {
+    public Name getEmpName() {
         return empName;
     }
 
-    public void setEmpName(String empName) {
+    public void setEmpName(Name empName) {
         this.empName = empName;
     }
 

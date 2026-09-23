@@ -11,7 +11,7 @@ package version2;
  */
 public class PieceWorkerEmployee {
     private int empID;
-    private String empName;
+    private Name empName;
     private int totalPiecesFinished;
     private double ratePerPiece;
     private Mydate empBirthDate;
@@ -19,19 +19,19 @@ public class PieceWorkerEmployee {
 
     public PieceWorkerEmployee() {
         this.empID = 0;
-        this.empName = "N/A";
+        this.empName = new Name();
         this.ratePerPiece = 0.0;
         this.totalPiecesFinished = 0;
     }
 
-    public PieceWorkerEmployee(int empID, String empName) {
+    public PieceWorkerEmployee(int empID, Name empName) {
         this.empID = empID;
         this.empName = empName;
         this.ratePerPiece = 0.0;
         this.totalPiecesFinished = 0;
     }
 
-    public PieceWorkerEmployee(int empID, String empName, int totalPiecesFinished, double ratePerPiece) {
+    public PieceWorkerEmployee(int empID, Name empName, int totalPiecesFinished, double ratePerPiece) {
         this.empID = empID;
         this.empName = empName;
         this.totalPiecesFinished = totalPiecesFinished;
@@ -46,11 +46,11 @@ public class PieceWorkerEmployee {
         this.empID = empID;
     }
 
-    public String getEmpName() {
+    public Name getEmpName() {
         return empName;
     }
 
-    public void setEmpName(String empName) {
+    public void setEmpName(Name empName) {
         this.empName = empName;
     }
 

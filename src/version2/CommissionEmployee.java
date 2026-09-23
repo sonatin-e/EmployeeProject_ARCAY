@@ -12,7 +12,7 @@ package version2;
 public class CommissionEmployee {
 
     private int empID;
-    private String empName;
+    private Name empName;
     private double totalSale;
     private Mydate empBirthDate;
     private Mydate empDateHired;
@@ -20,13 +20,13 @@ public class CommissionEmployee {
     // Constructors
     public CommissionEmployee() {
         this.empID = 0;
-        this.empName = "N/A";
+        this.empName = new Name();
         this.totalSale = 0.0;
         this.empBirthDate = null;
         this.empDateHired = null;
     }
 
-    public CommissionEmployee(int empID, String empName) {
+    public CommissionEmployee(int empID, Name empName) {
         this.empID = empID;
         this.empName = empName;
         this.totalSale = 0.0;
@@ -34,7 +34,7 @@ public class CommissionEmployee {
         this.empDateHired = null;
     }
 
-    public CommissionEmployee(int empID, String empName, double totalSale) {
+    public CommissionEmployee(int empID, Name empName, double totalSale) {
         this.empID = empID;
         this.empName = empName;
         this.totalSale = totalSale;
@@ -42,7 +42,7 @@ public class CommissionEmployee {
         this.empDateHired = null;
     }
 
-    public CommissionEmployee(int empID, String empName, double totalSale, Mydate empBirthDate, Mydate empDateHired) {
+    public CommissionEmployee(int empID, Name empName, double totalSale, Mydate empBirthDate, Mydate empDateHired) {
         this.empID = empID;
         this.empName = empName;
         this.totalSale = totalSale;
@@ -59,11 +59,11 @@ public class CommissionEmployee {
         this.empID = empID;
     }
 
-    public String getEmpName() {
+    public Name getEmpName() {
         return empName;
     }
 
-    public void setEmpName(String empName) {
+    public void setEmpName(Name empName) {
         this.empName = empName;
     }
 
