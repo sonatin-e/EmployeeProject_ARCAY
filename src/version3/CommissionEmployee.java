@@ -14,6 +14,7 @@ public class CommissionEmployee extends Employee{
     private double totalSale;
 
     public double getTotalSale() {
+
         return totalSale;
     }
 

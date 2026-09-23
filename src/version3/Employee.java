@@ -7,12 +7,15 @@ public class Employee{
     Mydate empDateHired;
 
     public Employee() {
-
+        this.empID = 0;
+        this.empName = new Name();
+        this.empBirthDate = new Mydate();
+        this.empDateHired = new Mydate();
     }
 
-    public Employee(int empID,Name empName, Mydate empBirthDate, Mydate empDateHired) {
+    public Employee(int empID, Name name, Mydate empBirthDate, Mydate empDateHired) {
         this.empID = empID;
-        this.empName = empName;
+        this.empName = name;
         this.empBirthDate = empBirthDate;
         this.empDateHired = empDateHired;
     }

@@ -6,6 +6,12 @@ public class Name {
     private String MiddleN;
     private String LastN;
 
+    public Name() {
+        this.firstN = "";
+        this.MiddleN = "";
+        this.LastN = "";
+    }
+
     public Name(String firstN) {
         this.firstN = firstN;
     }
